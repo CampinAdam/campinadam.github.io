@@ -1,0 +1,552 @@
+<html>
+<head>
+<style>
+body {
+    --red-color: rgba(255, 110, 115, 1.0);
+    --orange-color: rgba(255, 180, 111, 1.0);
+    --yellow-color: rgba(255, 255, 103, 1.0);
+    --green-color: rgba(53, 255, 107, 1.0);
+    --blue-color: rgba(53, 255, 253, 1.0);
+    --pink-color: rgba(255, 110, 244, 1.0);
+    --purple-color: rgba(255, 156, 246, 1.0);
+    --other-color: rgba(191, 191, 191, 1.0);
+}
+
+/* Colors for themes */
+:root {
+    --text-color: black;
+    --background-color: white;
+    --accent-color: rgb(65, 110, 210);
+    --title-text-color: rgb(27, 27, 27);
+    --subject-text-color: rgba(0, 0, 0, 0.65);
+    --body-text-color: rgb(27, 27, 27);
+    --blockquote-text-color: rgba(0, 0, 0, 0.72);
+    --blockquote-border-color: rgba(0, 0, 0, 0.1);
+    --horizontal-line-color: rgba(0, 0, 0, 0.2);
+    --table-background-color: rgba(0, 0, 0, 0.1);
+    --tag-background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: white;
+        --background-color: rgb(28, 28, 28);
+        --accent-color: rgb(90, 200, 250);
+        --title-text-color: rgba(255, 255, 255, 0.78);
+        --subject-text-color: rgba(255, 255, 255, 0.65);
+        --body-text-color: rgba(255, 255, 255, 1.0);
+        --blockquote-text-color: rgba(255, 255, 255, 0.78);
+        --blockquote-border-color: rgba(255, 255, 255, 0.1);
+        --horizontal-line-color: rgb(111, 111, 111);
+        --table-background-color: rgba(255, 255, 255, 0.1);
+        --tag-background-color: rgb(111, 111, 111);
+    }
+}
+
+:root {
+    background-color: var(--background-color);
+    font-family: -apple-system-font, Helvetica, Roboto, Arial, sans-serif;
+}
+h1 {
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 1.2em;
+    color: var(--title-text-color);
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+h2 {
+    font-weight: normal;
+    font-size: 1.43em;
+    line-height: 1.27275em;
+    color: var(--subject-text-color);
+    margin-top: 0.3em;
+    margin-bottom: 0em;
+}
+h3 {
+    font-size: 1.25em;
+    color: var(--title-text-color);
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+}
+h4 {
+    font-size: 1em;
+    margin: 1em 0;
+    text-align: center;
+    color: var(--text-color);
+}
+h5 {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 0.9em;
+    margin: 1em 0;
+    color: var(--text-color);
+}
+p:not(blockquote p), u, s  {
+    color: var(--text-color);
+}
+s {
+    text-decoration: line-through;
+}
+u {
+    text-decoration: underline;
+}
+mark.orange {
+    background-color: var(--orange-color);
+}
+mark.red {
+    background-color: var(--red-color);
+}
+mark.yellow {
+    background-color: var(--yellow-color);
+}
+mark.green {
+    background-color: var(--green-color);
+}
+mark.blue {
+    background-color: var(--blue-color);
+}
+mark.pink {
+    background-color: var(--pink-color);
+}
+mark.purple {
+    background-color: var(--purple-color);
+}
+mark.other {
+    background-color: var(--other-color);
+}
+u.orange, s.orange {
+    text-decoration-color: var(--orange-color);
+}
+u.red, s.red {
+    text-decoration-color: var(--red-color);
+}
+u.yellow, s.yellow {
+    text-decoration-color: var(--yellow-color);
+}
+u.green, s.green {
+    text-decoration-color: var(--green-color);
+}
+u.blue, s.blue {
+    text-decoration-color: var(--blue-color);
+}
+u.pink, s.pink {
+    text-decoration-color: var(--pink-color);
+}
+u.purple, s.purple {
+    text-decoration-color: var(--purple-color);
+}
+u.other, s.other {
+    text-decoration-color: var(--other-color);
+}
+li, span, th, td {
+    color: var(--text-color);
+}
+blockquote {
+    color: var(--blockquote-text-color);
+    border-left: 3px solid var(--blockquote-border-color);
+    margin-left: 2px;
+    margin-right: 6px;
+    padding-left: 16px;
+}
+blockquote.orange {
+    border-left: 3px solid var(--orange-color);
+}
+blockquote.red {
+    border-left: 3px solid var(--red-color);
+}
+blockquote.yellow {
+    border-left: 3px solid var(--yellow-color);
+}
+blockquote.green {
+    border-left: 3px solid var(--green-color);
+}
+blockquote.blue {
+    border-left: 3px solid var(--blue-color);
+}
+blockquote.pink {
+    border-left: 3px solid var(--pink-color);
+}
+blockquote.purple {
+    border-left: 3px solid var(--purple-color);
+}
+blockquote.other {
+    border-left: 3px solid var(--other-color);
+}
+
+caption, figcaption {
+    font-size: 0.85em;
+    font-style: italic;
+    color: var(--text-color);
+}
+body {
+    text-align: start;
+    word-wrap: break-word;
+}
+
+body.rtl {
+    direction: rtl;
+}
+
+a {
+    text-decoration: none;
+}
+
+a[href] {
+    color: var(--accent-color);
+}
+
+body {
+    text-rendering: optimizeLegibility;
+}
+
+body * {
+    /* Scale down anything larger than our view. Max-width maintains aspect ratios on images. */
+    max-width: 100%;
+}
+
+img, table {
+    /* By default, images are centered on their own line. */
+    margin: 0.5em auto;
+    display: block;
+    height: auto;
+}
+
+figure img {
+    margin-bottom: 0;
+}
+
+figcaption > * {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+.tag {
+    align-items: center;
+    background-color: var(--tag-background-color);
+    border-radius: .5em;
+    color: var(--text-color);
+    display: inline-flex;
+    padding-top: .25em;
+    padding-bottom: .25em;
+    padding-left: .5em;
+    padding-right: .5em;
+    white-space: nowrap;
+}
+
+body :matches(figure) p {
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+}
+
+.float.left {
+    float: left;
+    margin-right: 20px;
+}
+
+.float.right {
+    float: right;
+    margin-left: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+ul.list-style-type-none, ol.list-style-type-none, .list-style-type-none > li {
+    list-style-type: none;
+    -webkit-padding-start: 0;
+}
+
+.list-style-type-none.code-block code {
+    white-space: pre-wrap;
+}
+
+figure {
+    margin: 0;
+    margin-top: 1.4em;
+    margin-bottom: 1.4em;
+}
+
+hr {
+    background: var(--horizontal-line-color);
+    height: 2px;
+    border: 0;
+}
+
+pre {
+    font-size: 1em;
+    line-height: 1.45em;
+    color: var(--text-color);
+}
+
+
+/* Collapse excess whitespace. */
+body p > p:empty,
+body div > p:empty,
+body p > div:empty,
+body div > div:empty,
+body p + br,
+body img + br
+{
+    display: none;
+}
+
+table {
+    font-size: 0.9em;
+    word-wrap: break-word;
+    border-collapse: collapse;
+}
+
+table td, body table th {
+    padding: 0.25em 0.5em;
+    border: 1px solid var(--text-color);
+}
+
+.delimiter {
+    margin-left: 0.45em;
+    margin-right: 0.45em;
+    margin-top: 0.07em;
+    padding: 0;
+}
+
+table th {
+    background-color: var(--table-background-color);
+}
+
+sup, sub {
+    line-height: 1;
+    font-size: 0.75em;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Printing and mailing. */
+body.exported {
+    font-size: 1.2em;
+}
+
+.exported {
+    line-height: 1.5em;
+}
+
+.exported a[href] {
+    text-decoration: underline;
+}
+
+body.exported {
+    margin: 0;
+    padding: 0;
+}
+
+.exported .float {
+    float: none;
+    margin-top: 1.4em;
+    margin-bottom: 1.4em;
+}
+
+body.exported figcaption {
+    font-size: 0.75rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.exported .delimiter::after {
+    content: "";
+}
+
+
+@media print {
+    :root {
+        --text-color: black;
+        --background-color: white;
+        --accent-color: rgb(65, 110, 210);
+        --title-text-color: rgb(27, 27, 27);
+        --subject-text-color: rgba(0, 0, 0, 0.65);
+        --body-text-color: rgb(27, 27, 27);
+        --blockquote-text-color: rgba(0, 0, 0, 0.72);
+        --blockquote-border-color: rgba(0, 0, 0, 0.1);
+        --horizontal-line-color: rgba(0, 0, 0, 0.2);
+        --table-background-color: rgba(0, 0, 0, 0.1);
+        --tag-background-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    .original-url {
+        display: none;
+    }
+    
+    body .float.left {
+        float: left !important;
+    }
+    
+    body .float.right {
+        float: right !important;
+    }
+    
+    body .float {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+}
+
+
+@media screen {
+    body {
+        margin: 0;
+        padding: 0;
+        -webkit-user-select: none;
+        overflow-x: hidden;
+        -webkit-text-size-adjust: none;
+    }
+    
+    .cached embed, .cached applet, .cached object {
+        display: none !important;
+    }
+    
+    body {
+        pointer-events: auto;
+        -webkit-user-select: auto;
+        overflow: visible;
+    }
+    
+    body:focus {
+        outline: none;
+    }
+    
+    body {
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        position: relative;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:2) {
+    hr {
+        height: 1px;
+    }
+}
+
+@media screen and (min-width: 0px) {
+    /* Includes iPhone 5 in portrait */
+    body { padding-left: 16px; padding-right: 16px; }
+}
+
+@media screen and (min-width: 375px) {
+    /* iPhone 6 in portrait */
+    body { padding-left: 18px; padding-right: 18px; }
+}
+
+@media screen and (min-width: 414px) {
+    /* iPhone 6 Plus in portrait */
+    body { padding-left: 20px; padding-right: 20px; }
+}
+
+/* iPhone 5 in landscape (568px) */
+
+@media screen and (min-width: 667px) {
+    /* iPhone 6 in landscape */
+    body { padding-left: 40px; padding-right: 40px; }
+}
+
+@media screen and (max-width: 569px) {
+    /* iPhone 5 in landscape (568px) and smaller, including all iPhones in portrait */
+    h1 {
+        font-size: 1.4em;
+    }
+    h2 {
+        font-size: 1.2777em;
+    }
+    h3 {
+        font-size: 1.15em;
+        line-height: 1.6em;
+    }
+    h1 + h3 {
+        margin-top: -0.65em;
+    }
+}
+
+@media screen and (min-width: 704px) {
+    /* iPad in landscape with the sidebar open */
+    body { padding-left: 42px; padding-right: 42px; }
+}
+
+@media screen and (min-width: 736px) {
+    /* iPhone 6 Plus in landscape */
+    body { padding-left: 60px; padding-right: 60px; }
+}
+
+@media only screen and (min-width: 780px) {
+    body {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    /* Readable margins. */
+    body.system { max-width: 83.2ex; }
+    body.athelas { max-width: 104ex; }
+    body.charter { max-width: 86ex; }
+    body.georgia { max-width: 94ex; }
+    body.iowan { max-width: 90ex; }
+    body.palatino { max-width: 97ex; }
+    body.seravek { max-width: 87ex; }
+    body.times { max-width: 97ex; }
+    
+    :matches(body.pingfangsc, body.pingfangtc) { max-width: 87.6ex; }
+    :matches(body.heitisc, body.heititc) { max-width: 74.8ex; }
+    :matches(body.songtisc, body.songtitc) { max-width: 102ex; }
+    :matches(body.kaitisc, body.kaititc) { max-width: 102ex; }
+    :matches(body.yuantisc, body.yuantitc) { max-width: 86.2ex; }
+    :matches(body.libiansc, body.libiantc) { max-width: 95ex; }
+    :matches(body.weibeisc, body.weibeitc) { max-width: 99ex; }
+    :matches(body.yuppysc, body.yuppytc) { max-width: 87.6ex; }
+    
+    body.hiraginosans { max-width: 75.7ex; }
+    body.hiraginokaku { max-width: 76.4ex; }
+    body.hiraginomincho { max-width: 77.5ex; }
+    body.hiraginomaru { max-width: 75.1ex; }
+    
+    body.applesdgothicneo { max-width: 82ex; }
+    body.nanumgothic { max-width: 88.6ex; }
+    body.nanummyeongjo { max-width: 94.1ex; }
+}
+
+body {
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+/* Use slightly smaller page padding when vertically constrained. */
+@media screen and (max-height: 700px) {
+    body {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
+
+</style>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0"/>
+</head>
+<body>
+<h1 id="ageneralstraintheoryofterrorism">A general strain theory of terrorism</h1>
+
+<h2 id="robertagnew">Robert Agnew</h2>
+
+<h3 id="theoreticalcriminology2010volume14issue2page131–153https:doi.org10.11771362480609350163"><a href="https://doi.org/10.1177/1362480609350163">Theoretical Criminology, 2010, Volume 14, Issue 2, Page 131–153</a></h3>
+
+<h4 id="page1"><a href="highlights://A%20general%20strain%20theory%20of%20terrorism%20-%20Robert%20Agnew,%202010#page=1">Page 131</a></h4>
+
+<h5 id="abstractgreenhighlight2021-08-03:">Abstract, Green, Highlight, 2021-08-03:</h5>
+
+<blockquote class="green">
+
+<p>Abstract This article reviews and critiques current strain-based explanations of terrorism, then draws on general strain theory and the terrorism research to present a general strain theory of terrorism. This theory states that terrorism is most likely when people experience ‘collective strains’ that are: (a) high in magnitude, with civilians affected; (b) unjust; and (c) inflicted by significantly more powerful others, including ‘complicit’ civilians, with whom members of the strained collectivity have weak ties. These collective strains increase the likelihood of terrorism for several reasons, but they do not lead to terrorism in all cases—a range of factors condition their effect</p>
+
+</blockquote>
+
+
+<script type="text/javascript" src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+</body>
+</html>
