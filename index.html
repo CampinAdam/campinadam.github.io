@@ -1,7 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 
 <head>
+    <script>
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.getElementsByTagName('html')[0].attributes['data-bs-theme'].value = 'dark';
+        }
+    </script>
+    <link rel="shortcut icon" type="image/x-icon" href="/campinadam.github.io/assets/favicon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio - Adam Camp</title>
@@ -13,14 +19,24 @@
             outline: none !important;
             box-shadow: none !important;
         }
+
+        .gradient-text {
+            background: -webkit-linear-gradient(45deg, #FFC107, #F44336);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     </style>
 </head>
 
-<body>
+<body id="top">
+
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"">Adam Camp</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            <a class="navbar-brand gradient-text" href="#top">
+                <i class="bi bi-terminal me-2"></i>Adam Camp
+            </a>
+            <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -28,232 +44,90 @@
                 <div class="navbar-nav">
                     <a class="nav-link" href="#Projects">Projects</a>
                     <a class="nav-link" href="https://campinadam.github.io/CampA_resume.pdf" target="_blank">Resume</a>
+                    <a class="nav-link" href="#About">About</a>
+
+
                 </div>
             </div>
         </div>
     </nav>
     <main>
-        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-            <div class="col-md-5 p-lg-5 mx-auto my-5">
-                <h1 class="display-3 fw-normal">Punny headline</h1>
-                <p class="lead fw-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with
-                    this
-                    example based on Apple’s marketing pages.</p>
-                <a class="btn btn-outline-secondary" href="#">Coming soon</a>
-            </div>
-            <div class="product-device shadow-sm d-none d-md-block"></div>
-            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-            <section class="py-5 text-center container">
-                <div class="row py-lg-5">
-                    <div class="col-lg-6 col-md-8 mx-auto">
-                        <h1 class="fw-light">Album example</h1>
-                        <p class="lead text-body-secondary">Something short and leading about the collection below—its
-                            contents, the
-                            creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it
-                            entirely.</p>
-                        <p>
-                            <a href="CampA_resume.pdf" class="btn btn-primary my-2">Main call to action</a>
-                            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <div class="album py-5 bg-body-tertiary">
-                <div class="container">
-
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <div class="img-thumbnail">
-                                    <img src="https://campinadam.github.io/assets/CampA_resume.svg" alt="Placeholder"
-                                        width="100%">
-                                    <title>Placeholder</title>
-                                    <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
-                                        fill="#1A2126" dy=".3em">Thumbnail</text>
-                                    </img>
-                                </div>
-
-
-                                <div class="card-body">
-
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional
-                                        content. This content is a little bit longer.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-primary">View</button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                        </div>
-                                        <small class="text-body-secondary">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                    preserveAspectRatio="xMidYMid slice" focusable="false">
-                                    <title>Placeholder</title>
-                                    <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
-                                        fill="#eceeef" dy=".3em">Thumbnail</text>
-                                </svg>
-                                <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional
-                                        content. This content is a little bit longer.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                        </div>
-                                        <small class="text-body-secondary">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                    preserveAspectRatio="xMidYMid slice" focusable="false">
-                                    <title>Placeholder</title>
-                                    <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
-                                        fill="#eceeef" dy=".3em">Thumbnail</text>
-                                </svg>
-                                <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional
-                                        content. This content is a little bit longer.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                        </div>
-                                        <small class="text-body-secondary">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card shadow-sm">
-                                <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                                    preserveAspectRatio="xMidYMid slice" focusable="false">
-                                    <title>Placeholder</title>
-                                    <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
-                                        fill="#eceeef" dy=".3em">Thumbnail</text>
-                                </svg>
-                                <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional
-                                        content. This content is a little bit longer.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                        </div>
-                                        <small class="text-body-secondary">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-    </main>
-    <div class="container px-4 py-5" id="featured-3">
-        <h2 class="pb-2 border-bottom" id="Projects">Projects</h2>
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-            <div class="feature col">
-                <div
-                    class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                    <img src="/campinadam.github.io/assets/timely.png" alt="">
-                </div>
-                <h3 class="fs-2 text-body-emphasis">Timely</h3>
-                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence
-                    and
-                    probably just keep going until we run out of words.</p>
-                <a href="#" class="icon-link">
-                    Call to action
-                    <svg class="bi">
-                        <use xlink:href="#chevron-right"></use>
-                    </svg>
-                </a>
-            </div>
-            <div class="feature col">
-                <div
-                    class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                    <svg class="bi" width="1em" height="1em">
-                        <use xlink:href="#people-circle"></use>
-                    </svg>
-                </div>
-                <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence
-                    and
-                    probably just keep going until we run out of words.</p>
-                <a href="#" class="icon-link">
-                    Call to action
-                    <svg class="bi">
-                        <use xlink:href="#chevron-right"></use>
-                    </svg>
-                </a>
-            </div>
-            <div class="feature col">
-                <div
-                    class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                    <svg class="bi" width="1em" height="1em">
-                        <use xlink:href="#toggles2"></use>
-                    </svg>
-                </div>
-                <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence
-                    and
-                    probably just keep going until we run out of words.</p>
-                <a href="#" class="icon-link">
-                    Call to action
-                    <svg class="bi">
-                        <use xlink:href="#chevron-right"></use>
-                    </svg>
-                </a>
+        <div class="container py-4">
+            <div class="px-4 py-5 mb-4 bg-body-tertiary rounded-3">
+                <div class=" container-fluid py-5">
+                    <p class="lead col-md-8 text-center">
+                        Web & Mobile Developer | Aspiring Software Engineer
+                    </p>
+                <!-- <h1 class="display-4 fw-bold gradient-text">Adam Camp</h1> -->
+                </div>  
             </div>
         </div>
-    </div>
-    <div class="container my-5">
-        <div class="p-5 text-center bg-dark rounded-3">
-            <svg class="bi mt-4 mb-3" style="color: var(--bs-indigo);" width="100" height="100">
-                <use xlink:href="#bootstrap"></use>
-            </svg>
-            <h1 class="text-white">Jumbotron with icon</h1>
-            <p class="col-lg-8 mx-auto fs-5 text-white-50">
-                This is a custom jumbotron featuring an SVG image at the top, some longer text that wraps early thanks
-                to a
-                responsive <code>.col-*</code> class, and a customized call to action.
+        </div>
+
+        <div class="container px-4 py-4" id="featured-3">
+            <h2 class="pb-2 border-bottom" id="Projects">Projects</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="feature col pb-4">
+                    <div class="img-fluid d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                        <a href="/campinadam.github.io/assets/IMG_0737.gif">
+                            <img class="img-fluid rounded shadow-lg" src="/campinadam.github.io/assets/IMG_0737.gif"
+                                alt="Timely" />
+                            <title>Timely</title>
+
+                        </a>
+                    </div>
+                    <h3 class="fs-2">Timely</h3>
+                    <p>Timely is a mobile application that learns a user's tendencies and schedule to predict the optimal notification time to leave for their next event. Timely was created using Flutter, Dart, and Firebase.</p>
+                  
+                    <div class="d-flex justify-content-between">
+                        <div class="btn-group>
+                            <a href="https://www.timelyml.com" target="_blank">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Website</button>
+                            </a>
+                            <a href="https://www.github.com/campinadam/timely-frontend" target="_blank">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Repo</button>
+                            </a>
+                        </div>
+                        <!-- <small class="text-body-secondary">9 mins</small> -->
+                    </div>
+                </div>
+                <div class="feature col py-4">
+                    <div class="img-fluid d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                        <img src="https://dummyimage.com/500x300/dee2e6/6c757d.jpg" class="img-fluid rounded shadow-lg mx-auto" alt="..." />
+                        </div>  
+                    <h3 class="fs-2">User-Centered Design Project for TRAILS Adaptive&trade;</h3>
+                    <p>TRAILS Adaptive&trade; is a non-profit organization that provides adaptive sports equipment to people with disabilities. This project was completed as part of a User-Centered Design course at the University of Utah.</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="container px-4 py-4">
+            <h1 class="pb-2 border-bottom" id="Resume">Resume</h1>
+            <div class="mx-auto text-center py-5">
+                <a href="/campinadam.github.io/assets/CampA_resume.pdf" target="_blank">
+                    <img class="img-thumbnail rounded shadow-lg bg-light"
+                        src="/campinadam.github.io/assets/CampA_resume.pdf" width="75%" alt="Resume" />
+                </a>
+            </div>
+            <div class="mx-auto text-center">
+                <a href="/campinadam.github.io/assets/CampA_resume.pdf" target="_blank"
+                    class="btn btn-primary ">Download PDF</a>
+            </div>
+        </div>
+        <div class="container px-4 py-4" id="About">
+            <h2 class="pb-2 border-bottom my-4">About</h2>
+            <p class="text-justified text-muted px-4">
+                I am a web and mobile developer with a passion for creating and learning. I recently graduated from the
+                University of Utah with a bachelor's degrees in Computer Science. I have experience in full-stack
+                development with a focus on mobile technologies. I am currently seeking a full-time position in
+                industry where I can continue to learn and grow as a developer.
             </p>
-            <div class="d-inline-flex gap-2 mb-5">
-
-            </div>
         </div>
-    </div>
-    <div class="container my-5">
-        <h1>Hello, world!</h1>
-        <div class="col-lg-8 px-0">
-            <p class="fs-5">You've successfully loaded up the Bootstrap starter example. It includes <a
-                    href="https://getbootstrap.com/">Bootstrap 5</a> via the <a
-                    href="https://www.jsdelivr.com/package/npm/bootstrap">jsDelivr CDN</a> and includes an additional
-                CSS and JS
-                file for your own code.</p>
-            <p>Feel free to download or copy-and-paste any parts of this example.</p>
-
-            <hr class="col-1 my-4">
-
-            <a href="https://getbootstrap.com" class="btn btn-primary">Read the Bootstrap docs</a>
-            <a href="https://github.com/twbs/examples" class="btn btn-secondary">View on GitHub</a>
-        </div>
-    </div>
+        <a href="#top" class="position-fixed bottom-0 end-0 p-4" style="z-index: 11">
+            <i class="bi bi-arrow-up-circle-fill fs-1 text-primary"></i>
+        </a>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
@@ -262,6 +136,8 @@
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function () {
+           
+            $('h3').addClass('text-body-emphasis')
             $('.navbar-nav>a, .navbar-brand').click(function () {
                 $('.navbar-collapse').collapse('hide');
                 $('.display-3').animate({
@@ -271,13 +147,9 @@
                         opacity: '1'
                     }, 750);
                 });
-
-
-
-
-
             });
         });
+
     </script>
 </body>
 
