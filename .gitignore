@@ -18,3 +18,12 @@ out/
 
 # OS X
 .DS_Store
+
+# Tex
+.aux
+.fdb_latexmk
+.fls
+.log
+.out
+.synctex.gz
+
