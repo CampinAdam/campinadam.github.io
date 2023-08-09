@@ -27,5 +27,7 @@ out/
 *.out
 *.synctex.gz
 
-assets/resume/20230808_CampA_resume.tex
+assets/cover_letters/*
+assets/resume/*
+!assets/resume/CampA_resume.pdf
 assets/cover_letter.md

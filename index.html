@@ -3,30 +3,18 @@
 
 <head>
     <script>
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            document.getElementsByTagName('html')[0].attributes['data-bs-theme'].value = 'dark';
-        }
+        // if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        //     document.getElementsByTagName('html')[0].attributes['data-bs-theme'].value = 'dark';
+        // }
     </script>
-    <link rel="shortcut icon" type="image/x-icon" href="/campinadam.github.io/assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="https://campinadam.github.io/assets/favicon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio - Adam Camp</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <style>
-        :not(.navbar-toggler):focus {
-            outline: none !important;
-            box-shadow: none !important;
-        }
-
-        .gradient-text {
-            background: -webkit-linear-gradient(45deg, #FFC107, #F44336);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    </style>
+    <link rel="stylesheet" href="/campinadam.github.io/css/styles.css">
 </head>
 
 <body id="top">
@@ -42,7 +30,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link" href="#Projects">Projects</a>
+                    <a class="nav-link" href="#top">Projects</a>
                     <a class="nav-link" href="#About">About</a>
                     <a class="nav-link" href="https://campinadam.github.io/CampA_resume.pdf" target="_blank">Resume</a>
                     <a class="nav-link" href="#Contact">Contact</a>
@@ -66,8 +54,8 @@
             </div>
         </div> -->
 
-        <div class="container px-4 py-4" id="Projects">
-            <div class="display-5 pb-2 border-bottom">Projects</div>
+        <div class="container px-4 py-4">
+            <div class="display-5 py-2 border-bottom">Projects</div>
             <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
                 <div class="feature col pb-4">
                     <div class="img-fluid d-inline-flex align-items-center justify-content-center fs-2 mb-3">
@@ -79,7 +67,7 @@
 
                         </a>
                     </div>
-                    <h3 class="fs-2">Timely</h3>
+                    <h3 class="fs-3">Timely</h3>
                     <p>Timely is a mobile application that learns a user's tendencies and schedule to predict the
                         optimal notification time to leave for their next event. Timely was created using Flutter, Dart,
                         and Firebase.</p>
@@ -102,22 +90,22 @@
                     </div>
                 </div>
                 <div class="feature col pb-4">
-                    <div class="img-fluid d-inline-flex align-items-center justify-content-center fs-2 mb-3 ">
+                    <div class="img-fluid d-inline-flex align-items-center justify-content-center fs-2 mb-3">
                         <img src="https://www.dummyimage.com/600x400/000/fff" alt="TRAILS Adaptive"
-                            class="img-fluid rounded shadow-lg center mx-auto" />
+                            class="img-fluid rounded shadow-lg" />
                     </div>
-                    <h3 class="fs-2">User-Centered Design Project for TRAILS Adaptive&trade;</h3>
+                    <h3 class="">User-Centered Design Project for TRAILS Adaptive&trade;</h3>
                     <p>TRAILS Adaptive&trade; is a non-profit organization that provides adaptive sports equipment to
                         people with disabilities. This project was completed as part of a User-Centered Design course at
                         the University of Utah.</p>
 
                     <div class="d-flex justify-content-between d-flex align-items-center">
-                        <div class="btn-group>
-                        <a href=" https://www.timelyml.com" target="_blank">
-                            <button type="button" class="btn btn-sm btn-outline-info">Docs
-                                <i class=" bi bi-chevron-double-right"></i>
+                        <div class="btn-group">
+                            <a href=" https://www.timelyml.com" target="_blank">
+                                <button type="button" class="btn btn-sm btn-outline-info">Docs
+                                    <i class=" bi bi-chevron-double-right"></i>
 
-                            </button>
+                                </button>
                             </a>
 
                         </div>
@@ -130,57 +118,60 @@
                         <img src="https://www.dummyimage.com/600x400/000/fff" alt="Modern Python Web Browser"
                             class="img-fluid rounded shadow-lg center mx-auto" />
                     </div>
-                    <h3 class="fs-2">Modern Python Web Browser</h3>
+                    <h3 class="">Modern Python Web Browser</h3>
                     <p>A modern web browser built using Python and PyQt5. This project was completed as part of a
                         Software Development course at the University of Utah.</p>
 
                 </div>
             </div>
         </div>
-        </div>
+        <div id="About" class="py-5">
 
-        <div class="container col-lg-12 py-4" id="About">
-            <div class="display-5 pb-2 border-bottom">About</div>
+            <div class="container col-lg-12 py-4">
+                <div class="display-5 pb-2 border-bottom">About</div>
 
-            <div class="row align-items-lg-stretch">
-                <div class="col-lg-6">
-                    <div class="p-5  rounded-3" id="Resume">
-                        <img class="img-fluid rounded shadow-lg" src="https://dummyimage.com/500x300/dee2e6/6c757d.jpg"
-                            alt="Timely" />
+                <div class="row align-items-center my-5 bg-body-tertiary rounded-3">
+                    <div class="col-lg-6">
+                        <div class="p-5 rounded-3 text-center" id="Resume">
+                            <img class="img-fluid rounded shadow-lg"
+                                src="https://dummyimage.com/500x300/dee2e6/6c757d.jpg" alt="Timely" />
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="p-5 rounded-3 my-5 bg-body-tertiary">
-                        <p class="fs-5">
-                            Hi, I'm Adam.
-                            <i class="bi bi-emoji-smile-fill"></i>
-                            I am an aspiring software engineer passionate about creating intuitive, accessible, and
-                            pleasant user experiences. I recently graduated from the University of Utah with a
-                            bachelor's degree in Computer Science and experience in full-stack web development, mobile
-                            development, and user-centered design. I am currently seeking a full-time position in an
-                            industry where I can continue to learn and grow as a developer.
+                    <div class="col-lg-6">
+                        <div class="p-5 rounded-3 bg-body-tertiary">
+                            <p class="fs-5">
+                                Hi, I'm Adam.
+                                <i class="bi bi-emoji-smile-fill"></i>
+                                I am an aspiring software engineer passionate about creating intuitive, accessible, and
+                                pleasant user experiences. I recently graduated from the University of Utah with a
+                                bachelor's degree in Computer Science and experience in full-stack web development,
+                                mobile
+                                development, and user-centered design. I am currently seeking a full-time position in an
+                                industry where I can continue to learn and grow as a developer.
 
-                        </p>
+                            </p>
+
+                        </div>
 
                     </div>
 
                 </div>
+                <div class="py-5 my-4 text-center" id="Resume">
+                    <div class="img-fluid mx-auto">
+                        <a href="https://campinadam.github.io/assets/resume/CampA_resume.pdf" target="_blank">
+                            <img class="img-thumbnail rounded shadow-lg bg-light"
+                                src="https://campinadam.github.io/assets/resume/CampA_resume.pdf" alt="Resume" />
 
+                    </div>
+                    <div class="mx-auto py-4">
+                        <div class="btn btn-outline-info my-2">Download PDF
+                            <i class="bi bi-download ms-2"></i>
+                        </div>
+                    </div>
+                    </a>
+                </div>
             </div>
-            <div class="py-5 my-4 mx-auto">
-                <div class="img-fluid mx-auto text-center">
-                    <a href="https://campinadam.github.io/assets/resume/20230808_CampA_resume.pdf" target="_blank">
-                        <img class="img-thumbnail rounded shadow-lg bg-light"
-                            src="https://campinadam.github.io/assets/resume/20230808_CampA_resume.pdf" alt="Resume" />
 
-                </div>
-                <div class="mx-auto text-center py-4">
-                    <div class="btn btn-primary shadow-lg my-2">Download PDF
-                        <i class="bi bi-download ms-2"></i>
-                    </div>
-                </div>
-                </a>
-            </div>
         </div>
 
         <a href="#top" class="position-fixed bottom-0 end-0 p-4" style="z-index: 11">
@@ -195,7 +186,7 @@
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function () {
-            $('h3').addClass('text-body-emphasis');
+            $('h3').addClass('text-body-emphasis fs-3');
 
             $('.navbar-nav>a, .navbar-brand').click(function () {
                 $('.navbar-collapse').collapse('hide');
