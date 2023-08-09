@@ -20,10 +20,12 @@ out/
 .DS_Store
 
 # Tex
-.aux
-.fdb_latexmk
-.fls
-.log
-.out
-.synctex.gz
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
 
+assets/resume/20230808_CampA_resume.tex
+assets/cover_letter.md
