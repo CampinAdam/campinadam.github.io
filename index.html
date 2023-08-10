@@ -2,11 +2,7 @@
 <html lang="en" data-bs-theme="light">
 
 <head>
-    <script>
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            document.getElementsByTagName('html')[0].attributes['data-bs-theme'].value = 'dark';
-        }
-    </script>
+
     <link rel="icon" type="image/x-icon" href="https://campinadam.github.io/assets/favicon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,15 +23,24 @@
             -webkit-text-fill-color: transparent;
         }
     </style>
+    <script>
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.getElementsByTagName('html')[0].attributes['data-bs-theme'].value = 'dark';
+
+        }
+    </script>
 </head>
 
 <body id="top">
 
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
+
             <a class="navbar-brand gradient-text" href="#top">
                 <i class="bi bi-terminal me-2"></i>Adam Camp
             </a>
+
+
             <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -46,9 +51,11 @@
                     <a class="nav-link" href="#About">About</a>
                     <a class="nav-link" href="https://campinadam.github.io/CampA_resume.pdf" target="_blank">Resume</a>
                     <a class="nav-link" href="#Contact">Contact</a>
-
                 </div>
+                <i class="bi text-warning fs-5 ms-auto me-2" id="theme-toggle"></i>
+
             </div>
+
         </div>
     </nav>
     <main>
@@ -72,7 +79,7 @@
                 <div class="feature col pb-4">
                     <div class="img-fluid d-inline-flex align-items-center justify-content-center fs-2 mb-3">
                         <a href="https://campinadam.github.io/assets/timely.gif" target="_blank">
-                            <img class="img-fluid rounded shadow-lg"
+                            <img class="img-fluid rounded-3 shadow-lg"
                                 src="https://campinadam.github.io/assets/timely.gif" alt="Timely" />
 
                             <title>Timely</title>
@@ -104,7 +111,7 @@
                 <div class="feature col pb-4">
                     <div class="img-fluid d-inline-flex align-items-center justify-content-center fs-2 mb-3">
                         <img src="https://www.dummyimage.com/600x400/000/fff" alt="TRAILS Adaptive"
-                            class="img-fluid rounded shadow-lg" />
+                            class="img-fluid rounded-3 shadow-lg" />
                     </div>
                     <h3 class="">User-Centered Design Project for TRAILS Adaptive&trade;</h3>
                     <p>TRAILS Adaptive&trade; is a non-profit organization that provides adaptive sports equipment to
@@ -128,7 +135,7 @@
                 <div class="feature col pb-4">
                     <div class="img-fluid d-inline-flex align-items-center justify-content-center fs-2 mb-3 ">
                         <img src="https://www.dummyimage.com/600x400/000/fff" alt="Modern Python Web Browser"
-                            class="img-fluid rounded shadow-lg center mx-auto" />
+                            class="img-fluid rounded-3 shadow-lg" />
                     </div>
                     <h3 class="">Modern Python Web Browser</h3>
                     <p>A modern web browser built using Python and PyQt5. This project was completed as part of a
@@ -144,8 +151,8 @@
 
                 <div class="row align-items-center my-5 mx-1 bg-body-tertiary rounded-3">
                     <div class="col-lg-6">
-                        <div class="p-5 rounded-3 text-center">
-                            <img class="img-fluid rounded shadow-lg"
+                        <div class="p-5 text-center">
+                            <img class="img-fluid rounded-3 shadow-lg"
                                 src="https://dummyimage.com/500x300/dee2e6/6c757d.jpg" alt="Timely" />
                         </div>
                     </div>
@@ -153,14 +160,12 @@
                         <div class="p-5 rounded-3 bg-body-tertiary">
                             <p class="fs-5">
                                 Hi, I'm Adam.
-                                <i class="bi bi-emoji-smile-fill"></i>
+                                <i class="bi bi-emoji-smile-fill text-warning hidden"></i>
                                 I am an aspiring software engineer passionate about creating intuitive, accessible, and
                                 pleasant user experiences. I recently graduated from the University of Utah with a
-                                bachelor's degree in Computer Science and experience in full-stack web development,
-                                mobile
-                                development, and user-centered design. I am currently seeking a full-time position in an
-                                industry where I can continue to learn and grow as a developer.
-
+                                Bachelor's degree in Computer Science. My interests include full-stack web development,
+                                mobile development, and user experience design. I am currently seeking a full-time role
+                                in an environment where I can contribute and grow as a developer.
                             </p>
 
                         </div>
@@ -169,25 +174,27 @@
 
                 </div>
                 <div class="py-5 text-center">
-                    <div class="img-fluid mx-auto">
-                        <a href="https://campinadam.github.io/assets/resume/CampA_resume.pdf" target="_blank">
-                            <img class="img-thumbnail rounded shadow-lg bg-light"
-                                src="https://campinadam.github.io/assets/resume/CampA_resume.pdf" alt="Resume" />
+                    <a href="https://campinadam.github.io/assets/resume/CampA_resume.pdf" target="_blank">
+                        <img class="img-fluid rounded-3 shadow-lg bg-light"
+                            src="https://campinadam.github.io/assets/resume/CampA_resume.pdf" alt="Resume" />
 
-                    </div>
-                    <div class="mx-auto py-4">
-                        <div class="btn btn-primary my-2">Download PDF
-                            <i class="bi bi-download ms-2"></i>
-                        </div>
-                    </div>
                     </a>
+                    <div class="mx-auto py-4">
+                        <a class="btn btn-primary my-2"
+                            href="https://campinadam.github.io/assets/resume/CampA_resume.pdf" target="_blank">
+                            Download PDF
+                            <i class="bi bi-download ms-2"></i>
+                        </a>
+                    </div>
+
+
                 </div>
             </div>
 
         </div>
 
-        <a href="#top" class="position-fixed bottom-0 end-0 p-4" style="z-index: 11">
-            <i class="bi bi-arrow-up-circle-fill display-5 text-primary"></i>
+        <a href="#top" class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+            <i class="bi bi-arrow-up-circle-fill display-6 text-primary"></i>
         </a>
     </main>
 
@@ -197,8 +204,15 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script>
+        $('h3').addClass('text-body-emphasis fs-3');
+        $('.btn').addClass('shadow-sm');
+
         $(document).ready(function () {
-            $('h3').addClass('text-body-emphasis fs-3');
+            if ($('html').attr('data-bs-theme') == 'dark') {
+                $('#theme-toggle').addClass('bi-moon-fill');
+            } else {
+                $('#theme-toggle').addClass('bi-sun-fill');
+            }
 
             $('.navbar-nav>a, .navbar-brand').click(function () {
                 $('.navbar-collapse').collapse('hide');
@@ -211,16 +225,21 @@
                 });
             });
 
-            $('.nav-link').click(function () {
-                $('.nav-link').removeClass('active');
-                $(this).addClass('active');
-            });
 
-            $('#top').click(function () {
-                $('.nav-link').removeClass('active');
-            });
+            $('#theme-toggle').click(function () {
+                if ($('html').attr('data-bs-theme') == 'dark') {
+                    $('html').attr('data-bs-theme', 'light').fadeIn();
+                    $('#theme-toggle').removeClass('bi-moon-fill').addClass('bi-sun-fill').fadeIn();
+                } else {
+                    $('html').attr('data-bs-theme', 'dark').fadeIn();
 
+                    $('#theme-toggle').removeClass('bi-sun-fill').addClass('bi-moon-fill').fadeIn();
+
+                }
+
+            });
         });
+
     </script>
 </body>
 
