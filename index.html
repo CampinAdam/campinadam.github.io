@@ -157,8 +157,8 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="p-5 rounded-3 bg-body-tertiary">
-                            <p class="fs-5">
+                        <div class="">
+                            <p class="fs-5 p-5" id="about-text">
                                 Hi, I'm Adam.
                                 <i class="bi bi-emoji-smile-fill text-warning hidden"></i>
                                 I am an aspiring software engineer passionate about creating intuitive, accessible, and
@@ -216,13 +216,7 @@
 
             $('.navbar-nav>a, .navbar-brand').click(function () {
                 $('.navbar-collapse').collapse('hide');
-                $('.display-3').animate({
-                    opacity: '0.2'
-                }, 750, function () {
-                    $('.display-3').toggleClass('text-primary').animate({
-                        opacity: '1'
-                    }, 750);
-                });
+                
             });
 
 
@@ -238,6 +232,11 @@
                 }
 
             });
+
+            if ($(window).width() < 992) {
+                $('#about-text').toggleClass('fs-5 p-5 fs-6 p-4');
+
+            }
         });
 
     </script>
