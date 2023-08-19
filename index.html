@@ -77,9 +77,9 @@
 
         <div class="container p-4">
             <div class="display-5 py-2 border-bottom">Projects</div>
-            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3" data-masonry='{"percentPosition": true }'>
                 <div class="feature col pb-4">
-                    <div class="img-fluid d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                    <div class="img-fluid d-inline-flex fs-2 mb-3">
                         <a href="https://campinadam.github.io/assets/timely.gif" target="_blank">
                             <img class="img-fluid rounded-3 shadow-lg"
                                 src="https://campinadam.github.io/assets/timely.gif" alt="Timely" />
@@ -118,17 +118,15 @@
                     </div>
                 </div>
                 <div class="feature col pb-4">
-                    <a href="https://www.craft.me/s/aZyLWz0IBJKSA1" target="_blank">
-
-                        <div class="img-fluid d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-
+                    <div class="img-fluid d-inline-flex align-items-center justify-content-center fs-2 mb-3 ">
+                        <a href="https://www.craft.me/s/aZyLWz0IBJKSA1" target="_blank">
                             <img class="img-fluid rounded-3 shadow-lg"
-                                src="https://campinadam.github.io/assets/img/miro_board.png"
+                                src="https://campinadam.github.io/assets/img/Cover Image 3.png"
                                 alt="Miro Board for TRAILS Adaptive&trade;" />
                             <title>Miro Board for TRAILS Adaptive&trade;</title>
-                        </div>
+                        </a>
+                    </div>
 
-                    </a>
 
 
                     <h3 class="">User-Centered Design Project for TRAILS Adaptive&trade;</h3>
@@ -165,6 +163,14 @@
                         textbook <a href="https://browser.engineering/" target="_blank">Web Browser Engineering</a> by
                         Pavel Panchekha and Chris Harrelson.</p>
                     <div class="d-flex justify-content-between d-flex align-items-center">
+                        <div class="btn-group">
+                            <a href="https://campinadam.github.com/browser" target="_blank">
+                                <button type="button" class="btn btn-sm btn-outline-primary">
+                                    Repo
+                                    <i class=" bi bi-chevron-double-right"></i>
+                                </button>
+                            </a>
+                        </div>
                         <div class="badge-group">
                             <div class="badge bg-secondary">Python</div>
                             <div class="badge bg-secondary">JavaScript</div>
@@ -175,7 +181,9 @@
                 </div>
 
             </div>
+           
         </div>
+
         <div id="About">
 
             <div class="container col-lg-12 p-4">
@@ -191,8 +199,10 @@
                     <div class="col-lg-6">
                         <div class="p-4">
                             <h2 class="display-5 fw-bold">Hi, I'm Adam.</h2>
-                            <p class="lead fw-normal">I'm a software developer and designer based in Salt Lake City, UT.
-                                My goal is to create enjoyable and user-friendly digital experiences while ensuring
+                            <p class="lead fw-normal">I'm a software developer and designer based in Salt Lake
+                                City, UT.
+                                My goal is to create enjoyable and user-friendly digital experiences while
+                                ensuring
                                 accessibility for all.
                             </p>
 
@@ -237,6 +247,9 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
     <script>
         $('h3').addClass('text-body-emphasis fs-3');
         $('.btn').addClass('shadow-sm');
