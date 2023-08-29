@@ -63,7 +63,7 @@
                         and Firebase.</p>
 
                     <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
+                        <div class="btn-group btn-group-sm">
                             <a href="http://www.timelyml.com" target="_blank">
                                 <button type="button" class="btn btn-sm btn-outline-primary">Demo<i
                                         class="bi bi-chevron-double-right"></i>
@@ -75,13 +75,11 @@
                                 </button>
                             </a>
                         </div>
-                        <div class="badge-group ml-2">
+                        <div class="badge-group text-end">
                             <div class="badge bg-secondary">Flutter</div>
                             <div class="badge bg-secondary">Dart</div>
                             <div class="badge bg-secondary">Firebase</div>
                         </div>
-
-
                         <!-- <small class="text-body-secondary">9 mins</small> -->
                     </div>
                 </div>
@@ -98,15 +96,16 @@
 
 
                     <h3 class="">User-Centered Design Project for TRAILS Adaptive&trade;</h3>
-                    <p>TRAILS Adaptive&trade; is a non-profit organization that provides adaptive sports equipment to
+                    <p>TRAILS Adaptive&trade; is a non-profit organization that provides adaptive sports equipment
+                        to
                         people with physical and mental limitations. This project was completed as part of a
                         User-Centered Design course at the University of Utah.</p>
 
                     <div class="d-flex justify-content-between d-flex align-items-center">
                         <div class="btn-group">
                             <a href="https://www.craft.me/s/aZyLWz0IBJKSA1" target="_blank">
-                                <button type="button" class="btn btn-sm btn-outline-primary">
-                                    Deliverables<i class=" bi bi-chevron-double-right"></i>
+                                <button type="button" class="btn btn-sm btn-outline-primary">Deliverables<i
+                                        class=" bi bi-chevron-double-right"></i>
                                 </button>
                             </a>
 
@@ -114,8 +113,9 @@
                         <div class="badge-group">
                             <div class="badge bg-secondary">Figma</div>
                             <div class="badge bg-secondary">Miro</div>
-                            <div class="badge bg-secondary">HCI</div>
+                            <div class="badge bg-secondary">UI/UX</div>
                         </div>
+
 
                     </div>
                 </div>
@@ -125,9 +125,12 @@
                             alt="Modern Python Web Browser" class="img-fluid rounded-3 shadow-lg" />
                     </div>
                     <h3 class="">Python Web Browser</h3>
-                    <p>A modern web browser built using vanilla Python and JavaScript. Tkinter is used for the browser
-                        and developer tools GUIs. Completed as part of a Web Browser Internals course that follows the
-                        textbook <a href="https://browser.engineering/" target="_blank">Web Browser Engineering</a> by
+                    <p>A modern web browser built using vanilla Python and JavaScript. Tkinter is used for the
+                        browser
+                        and developer tools GUIs. Completed as part of a Web Browser Internals course that follows
+                        the
+                        textbook <a href="https://browser.engineering/" target="_blank">Web Browser Engineering</a>
+                        by
                         Pavel Panchekha and Chris Harrelson.</p>
                     <div class="d-flex justify-content-between d-flex align-items-center">
                         <div class="btn-group">
@@ -139,8 +142,8 @@
                         </div>
                         <div class="badge-group">
                             <div class="badge bg-secondary">Python</div>
-                            <div class="badge bg-secondary">JavaScript</div>
                             <div class="badge bg-secondary">Tkinter</div>
+                            <div class="badge bg-secondary">JavaScript</div>
                         </div>
                     </div>
 
@@ -162,13 +165,15 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="p-4">
-                            <h2 class="display-6 fw-bold d-inline-flex align-items-center">Hi, I'm<div
+                            <h2 class="display-6 fw-bold d-inline-flex align-items-center flag">Hi, I'm<div
                                     class="gradient-text mx-2"> Adam </div>
                                 <div class="waving">👋</div>
 
                             </h2>
-                            <p class="lead fw-normal">I'm a software developer and designer from Salt Lake City, Utah.
-                                I recently graduated from the University of Utah with a B.S. in Computer Science with 3+
+                            <p class="lead fw-normal">I'm a software developer and designer from Salt Lake City,
+                                Utah.
+                                I recently graduated from the University of Utah with a B.S. in Computer Science
+                                with 3+
                                 years experience building web and mobile applications.
                             </p>
                             <div class="button-gropu mt-4">
@@ -193,8 +198,8 @@
             </a>
             <div class="mx-auto py-4">
                 <a class="btn btn-outline-primary my-2"
-                    href="https://campinadam.github.io/assets/resume/CampA_resume.pdf" target="_blank">Download PDF<i
-                        class="bi bi-download ms-2"></i>
+                    href="https://campinadam.github.io/assets/resume/CampA_resume.pdf" target="_blank">Download
+                    PDF<i class="bi bi-download ms-2"></i>
                 </a>
             </div>
         </div>
@@ -222,7 +227,7 @@
             if ($("html").attr("data-bs-theme") == "dark") {
                 $("#theme-toggle").addClass("bi-moon-fill");
             } else {
-                $("#theme-toggle").addClass("bi-sun-fill");
+                $("#theme-toggle").addClass("bi-sun-fill radiate");
             }
 
             $(".navbar-nav>a, .navbar-brand").click(function () {
@@ -234,12 +239,12 @@
                     $("html").attr("data-bs-theme", "light").fadeIn();
                     $("#theme-toggle")
                         .removeClass("bi-moon-fill")
-                        .addClass("bi-sun-fill")
+                        .addClass("bi-sun-fill radiate")
                         .fadeIn();
                 } else {
                     $("html").attr("data-bs-theme", "dark").fadeIn();
                     $("#theme-toggle")
-                        .removeClass("bi-sun-fill")
+                        .removeClass("bi-sun-fill radiate")
                         .addClass("bi-moon-fill")
                         .fadeIn();
                 }

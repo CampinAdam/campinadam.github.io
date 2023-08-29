@@ -29,3 +29,4 @@ window.addEventListener("beforeunload", function () {
   };
   localStorage.setItem("settings", JSON.stringify(settings));
 });
+
