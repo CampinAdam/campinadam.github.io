@@ -33,7 +33,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link" href="#projects">Projects</a>
-                    <a class="nav-link" href="#About">About</a>
+                    <a class="nav-link" href="#about">About</a>
                     <a class="nav-link" href="https://campinadam.github.io/CampA_resume.pdf" target="_blank">Resume</a>
                 </div>
                 <i class="bi text-warning fs-5 ms-auto me-2" id="theme-toggle"></i>
@@ -45,7 +45,7 @@
     <main>
         <div class="container p-4" id="projects">
             <div class="display-5 py-2 border-bottom">Projects</div>
-            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center">
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-2 row-cols-xxl-3 justify-content-center">
                 <div class="feature col pb-4">
                     <div class="img-fluid d-inline-flex fs-2 mb-3">
                         <a href="https://campinadam.github.io/assets/timely.gif" target="_blank">
@@ -141,12 +141,11 @@
                     <div class="d-flex justify-content-between d-flex align-items-center">
                         <div class="btn-group">
                             <a href="https://github.com/CampinAdam/browser" target="_blank">
-                                <button type="button" class="btn btn-sm btn-outline-primary">
-                                    Repo<i class=" bi bi-chevron-double-right"></i>
+                                <button type="button" class="btn btn-sm btn-outline-primary">Repo<i class="bi bi-chevron-double-right"></i>
                                 </button>
                             </a>
                         </div>
-                        <div class="badge-group">
+                        <div class="badge-group text-end">
                             <img src="https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=flat"
                                 alt="Python" />
                             <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=white&style=flat"
@@ -163,34 +162,35 @@
         </div>
 
         <div class="container col-lg-12 p-4">
-            <div class="display-5 pb-2 border-bottom">About</div>
-            <div class="container-flex g-4 py-5">
+            <div class="display-5 pb-2 border-bottom" id="about">About</div>
+            <div class="container-flex g-4 py-5 align-items-center">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="px-4 text-center">
-                            <img class="img-fluid rounded-3 shadow-lg w-75 border-2 border-tertiary"
+                            <img class="img-fluid rounded-3 shadow-lg w-80 border-2 border-tertiary"
                                 src="https://campinadam.github.io/assets/img/me.jpg" alt="Portrait photo" />
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="p-4">
-                            <h2 class="display-6 fw-bold d-inline-flex align-items-center">Hi, I'm Adam.<div
-                                    class="waving">👋</div>
-
-                            </h2>
-                            <p class="lead fw-normal">I'm a software developer and designer from Salt Lake City,
-                                Utah.
-                                I recently graduated from the University of Utah with a B.S. in Computer Science
-                                with 3+
-                                years experience building web and mobile applications.
-                            </p>
-                            <div class="button-gropu mt-4">
-                                <a href="https://campinadam.github.com" target="_blank">
-                                    <i class="bi bi-github fs-2 me-3"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/campinadam/" target="_blank">
-                                    <i class="bi bi-linkedin fs-2 me-3"></i>
-                                </a>
+                        <div class="container-fluid bg-body-tertiary my-5 rounded-3">
+                            <div class="p-4">
+                                <h2 class="display-6 fw-bold d-inline-flex align-items-center">Hi, I'm Adam.<div class="waving">👋</div>
+                            
+                                </h2>
+                                <p class="lead fw-normal fs-5">I'm a software developer and designer from Salt Lake City,
+                                    Utah.
+                                    I recently graduated from the University of Utah with a B.S. in Computer Science
+                                    with 3+
+                                    years experience building web and mobile applications.
+                                </p>
+                                <div class="button-gropu mt-4">
+                                    <a href="https://campinadam.github.com" target="_blank">
+                                        <i class="bi bi-github fs-2 me-3"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/campinadam/" target="_blank">
+                                        <i class="bi bi-linkedin fs-2 me-3"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -200,7 +200,7 @@
         </div>
         <div class="p-auto text-center">
             <a href="https://campinadam.github.io/assets/resume/CampA_resume.pdf" target="_blank">
-                <img class="img-fluid rounded-3 shadow-lg bg-light border border-tertiary"
+                <img class="img-fluid rounded-3 shadow-lg bg-light border border-tertiary w-90"
                     src="https://campinadam.github.io/assets/resume/CampA_resume.pdf" alt="Resume" />
 
             </a>
@@ -237,7 +237,7 @@
             $(".badge-group > img").addClass('border border-tertiary rounded shadow-sm');
             $('h3').addClass('text-body-emphasis fs-3');
 
-            $(".navbar-nav>a, .navbar-brand").click(function () {
+            $(".navbar-nav>a, .navbar-brand, #theme-toggle").click(function () {
                 $(".navbar-collapse").collapse("hide");
             });
 
