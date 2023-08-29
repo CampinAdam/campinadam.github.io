@@ -1,0 +1,49 @@
+:not(.navbar-toggler):focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.gradient-text {
+    background: -webkit-linear-gradient(45deg, #FFC107, #F44336);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.waving {
+    animation: waving 2s infinite;
+}
+
+@keyframes waving {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(20deg);
+    }
+
+    20% {
+        transform: rotate(-14deg);
+    }
+
+    30% {
+        transform: rotate(20deg);
+    }
+
+    40% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(16deg);
+    }
+
+    60% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}

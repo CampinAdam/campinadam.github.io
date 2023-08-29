@@ -7,40 +7,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio - Adam Camp</title>
+    <meta name="description" content="Adam Camp's portfolio website.">
+    <meta name="author" content="Adam Camp">
+    <meta name="keywords"
+        content="Adam Camp, Adam, Camp, Portfolio, Software, Developer, Designer, UI, UX, Frontend, Backend, Fullstack, Full, Stack, Web, Mobile, App, Application, Engineer, Engineering, Computer, Science, Computer Science, University of Utah, UofU, U of U, U of Utah, University, Utah ">
+    <meta property="og:title" content="Portfolio - Adam Camp">
+    <meta property="og:image" content="https://campinadam.github.io/assets/img/IMG_1416.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <style>
-        :not(.navbar-toggler):focus {
-            outline: none !important;
-            box-shadow: none !important;
-        }
-
-        .gradient-text {
-            background: -webkit-linear-gradient(45deg, #FFC107, #F44336);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    </style>
-    <script>
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            document.getElementsByTagName('html')[0].attributes['data-bs-theme'].value = 'dark';
-
-        }
-    </script>
+    <link rel="stylesheet" href="https://campinadam.github.io/css/style.css">
+    <script src="https://campinadam.github.com/js/script.js"></script>
 </head>
 
 <body id="top">
-
     <nav class="navbar sticky-top navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
 
             <a class="navbar-brand gradient-text" href="#top">
                 <i class="bi bi-terminal me-2"></i>Adam Camp
             </a>
-
-
             <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -50,7 +36,6 @@
                     <a class="nav-link" href="#projects">Projects</a>
                     <a class="nav-link" href="#About">About</a>
                     <a class="nav-link" href="https://campinadam.github.io/CampA_resume.pdf" target="_blank">Resume</a>
-                    <a class="nav-link" href="#Contact">Contact</a>
                 </div>
                 <i class="bi text-warning fs-5 ms-auto me-2" id="theme-toggle"></i>
 
@@ -59,26 +44,9 @@
         </div>
     </nav>
     <main>
-
-        <!-- <div class="p-3 mb-4 bg-body-tertiary rounded-3">
-                <div class=" container-fluid py-5">
-                    <div class="img-fluid d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-                        <img src="/campinadam.github.io/assets/img/IMG_1416.JPG" class="img-fluid rounded-3 shadow-lg w-25" alt="..." />
-                    <p class="lead fs-4">
-                        Crafting digital experiences that are intuitive, accessible, and delightful.
-                    </p>
- 
-
-                    <h1 class="display-4 fw-bold gradient-text w-50">Adam Camp</h1>
-                    </div>
-                </div>
-            </div> -->
-        </div>
-
         <div class="container p-4" id="projects">
             <div class="display-5 py-2 border-bottom">Projects</div>
-            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center"
-                data-masonry='{"percentPosition": true }'>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center">
                 <div class="feature col pb-4">
                     <div class="img-fluid d-inline-flex fs-2 mb-3">
                         <a href="https://campinadam.github.io/assets/timely.gif" target="_blank">
@@ -90,24 +58,24 @@
                         </a>
                     </div>
                     <h3 class="fs-3">Timely</h3>
-                    <p>Timely is a mobile application that learns a user's tendencies and schedule to predict the
+                    <p>Timely is a mobile application that learns a user's tendencies and schedules to predict the
                         optimal notification time to leave for their next event. Timely was created using Flutter, Dart,
                         and Firebase.</p>
 
-                    <div class="d-flex justify-content-between d-flex align-items-center">
+                    <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                             <a href="http://www.timelyml.com" target="_blank">
-                                <button type="button" class="btn btn-sm btn-outline-primary">Demo
-                                    <i class="bi bi-chevron-double-right"></i>
+                                <button type="button" class="btn btn-sm btn-outline-primary">Demo<i
+                                        class="bi bi-chevron-double-right"></i>
                                 </button>
                             </a>
                             <a href="https://www.github.com/campinadam/timely-frontend" target="_blank">
-                                <button type="button" class="btn btn-sm btn-outline-primary">Repo
-                                    <i class="bi bi-chevron-double-right"></i>
+                                <button type="button" class="btn btn-sm btn-outline-primary">Repo<i
+                                        class="bi bi-chevron-double-right"></i>
                                 </button>
                             </a>
                         </div>
-                        <div class="badge-group">
+                        <div class="badge-group ml-2">
                             <div class="badge bg-secondary">Flutter</div>
                             <div class="badge bg-secondary">Dart</div>
                             <div class="badge bg-secondary">Firebase</div>
@@ -131,15 +99,14 @@
 
                     <h3 class="">User-Centered Design Project for TRAILS Adaptive&trade;</h3>
                     <p>TRAILS Adaptive&trade; is a non-profit organization that provides adaptive sports equipment to
-                        people with disabilities. This project was completed as part of a User-Centered Design course at
-                        the University of Utah.</p>
+                        people with physical and mental limitations. This project was completed as part of a
+                        User-Centered Design course at the University of Utah.</p>
 
                     <div class="d-flex justify-content-between d-flex align-items-center">
                         <div class="btn-group">
                             <a href="https://www.craft.me/s/aZyLWz0IBJKSA1" target="_blank">
                                 <button type="button" class="btn btn-sm btn-outline-primary">
-                                    Deliverables
-                                    <i class=" bi bi-chevron-double-right"></i>
+                                    Deliverables<i class=" bi bi-chevron-double-right"></i>
                                 </button>
                             </a>
 
@@ -166,8 +133,7 @@
                         <div class="btn-group">
                             <a href="https://github.com/CampinAdam/browser" target="_blank">
                                 <button type="button" class="btn btn-sm btn-outline-primary">
-                                    Repo
-                                    <i class=" bi bi-chevron-double-right"></i>
+                                    Repo<i class=" bi bi-chevron-double-right"></i>
                                 </button>
                             </a>
                         </div>
@@ -184,58 +150,57 @@
 
         </div>
 
-        <div id="About">
-
-            <div class="container col-lg-12 p-4">
-                <div class="display-5 pb-2 border-bottom">About</div>
-
-                <div class="row align-items-center g-lg-5 py-5">
+        <div class="container col-lg-12 p-4">
+            <div class="display-5 pb-2 border-bottom">About</div>
+            <div class="container-flex g-4 py-5">
+                <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="px-4 text-center">
-                            <img class="img-fluid rounded-3 shadow-lg border"
-                                src="https://campinadam.github.io/assets/img/IMG_1416.jpg" alt="..." />
+                            <img class="img-fluid rounded-3 shadow-lg w-75 border-2 border-tertiary"
+                                src="/campinadam.github.io/assets/img/me.jpg" alt="Portrait photo" />
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="p-4">
-                            <h2 class="display-5 fw-bold">Hi, I'm Adam.</h2>
-                            <p class="lead fw-normal">I'm a software developer and designer based in Salt Lake
-                                City, UT.
-                                My goal is to create enjoyable and user-friendly digital experiences while
-                                ensuring
-                                accessibility for all.
+                            <h2 class="display-6 fw-bold d-inline-flex align-items-center">Hi, I'm<div
+                                    class="gradient-text mx-2"> Adam </div>
+                                <div class="waving">👋</div>
+
+                            </h2>
+                            <p class="lead fw-normal">I'm a software developer and designer from Salt Lake City, Utah.
+                                I recently graduated from the University of Utah with a B.S. in Computer Science with 3+
+                                years experience building web and mobile applications.
                             </p>
-
-
-                            <a class="btn btn-outline-secondary" href="#Contact">Contact Me</a>
+                            <div class="button-gropu mt-4">
+                                <a href="https://campinadam.github.com" target="_blank">
+                                    <i class="bi bi-github fs-2 me-3"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/campinadam/" target="_blank">
+                                    <i class="bi bi-linkedin fs-2 me-3"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
                 </div>
-                <div class="p-auto text-center">
-                    <a href="https://campinadam.github.io/assets/resume/CampA_resume.pdf" target="_blank">
-                        <img class="img-fluid rounded-3 shadow-lg bg-light border"
-                            src="https://campinadam.github.io/assets/resume/CampA_resume.pdf" alt="Resume" />
-
-                    </a>
-                    <div class="mx-auto py-4">
-                        <a class="btn btn-outline-primary my-2"
-                            href="https://campinadam.github.io/assets/resume/CampA_resume.pdf" target="_blank">
-                            Download PDF
-                            <i class="bi bi-download ms-2"></i>
-                        </a>
-                    </div>
-
-
-                </div>
             </div>
+        </div>
+        <div class="p-auto text-center">
+            <a href="https://campinadam.github.io/assets/resume/CampA_resume.pdf" target="_blank">
+                <img class="img-fluid rounded-3 shadow-lg bg-light border border-tertiary"
+                    src="https://campinadam.github.io/assets/resume/CampA_resume.pdf" alt="Resume" />
 
+            </a>
+            <div class="mx-auto py-4">
+                <a class="btn btn-outline-primary my-2"
+                    href="https://campinadam.github.io/assets/resume/CampA_resume.pdf" target="_blank">Download PDF<i
+                        class="bi bi-download ms-2"></i>
+                </a>
+            </div>
         </div>
         <footer class="footer mt-auto py-3">
             <div class="container">
-
             </div>
-
         </footer>
         <a href="#top" class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
             <i class="bi bi-arrow-up-circle-fill display-6 text-primary"></i>
@@ -252,37 +217,36 @@
         async></script>
     <script>
         $('h3').addClass('text-body-emphasis fs-3');
-        $('.btn').addClass('shadow-sm');
-
+        $('.btn').addClass('shadow-sm'); 1
         $(document).ready(function () {
-            if ($('html').attr('data-bs-theme') == 'dark') {
-                $('#theme-toggle').addClass('bi-moon-fill');
+            if ($("html").attr("data-bs-theme") == "dark") {
+                $("#theme-toggle").addClass("bi-moon-fill");
             } else {
-                $('#theme-toggle').addClass('bi-sun-fill');
+                $("#theme-toggle").addClass("bi-sun-fill");
             }
 
-            $('.navbar-nav>a, .navbar-brand').click(function () {
-                $('.navbar-collapse').collapse('hide');
-
+            $(".navbar-nav>a, .navbar-brand").click(function () {
+                $(".navbar-collapse").collapse("hide");
             });
 
-
-            $('#theme-toggle').click(function () {
-                if ($('html').attr('data-bs-theme') == 'dark') {
-                    $('html').attr('data-bs-theme', 'light').fadeIn();
-                    $('#theme-toggle').removeClass('bi-moon-fill').addClass('bi-sun-fill').fadeIn();
+            $("#theme-toggle").click(function () {
+                if ($("html").attr("data-bs-theme") == "dark") {
+                    $("html").attr("data-bs-theme", "light").fadeIn();
+                    $("#theme-toggle")
+                        .removeClass("bi-moon-fill")
+                        .addClass("bi-sun-fill")
+                        .fadeIn();
                 } else {
-                    $('html').attr('data-bs-theme', 'dark').fadeIn();
-
-                    $('#theme-toggle').removeClass('bi-sun-fill').addClass('bi-moon-fill').fadeIn();
-
+                    $("html").attr("data-bs-theme", "dark").fadeIn();
+                    $("#theme-toggle")
+                        .removeClass("bi-sun-fill")
+                        .addClass("bi-moon-fill")
+                        .fadeIn();
                 }
-
             });
 
             if ($(window).width() < 992) {
-                $('#about-text').toggleClass('fs-5 p-5 p-4');
-
+                $("#about-text").toggleClass("fs-5 p-4");
             }
         });
 
