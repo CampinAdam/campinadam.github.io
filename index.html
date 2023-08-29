@@ -3,7 +3,6 @@
 
 <head>
 
-    <link rel="icon" type="image/x-icon" href="https://campinadam.github.io/assets/favicon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio - Adam Camp</title>
@@ -17,7 +16,7 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://campinadam.github.io/css/style.css">
-    <script src="https://campinadam.github.io/js/script.js" type="text/javascript"></script>
+    <script src="https://campinadam.github.io/js/script.js"></script>
 </head>
 
 <body id="top">
@@ -76,9 +75,14 @@
                             </a>
                         </div>
                         <div class="badge-group text-end">
-                            <div class="badge bg-secondary">Flutter</div>
-                            <div class="badge bg-secondary">Dart</div>
-                            <div class="badge bg-secondary">Firebase</div>
+                            <img src="https://img.shields.io/badge/-Dart-0175C2?logo=dart&logoColor=white&style=flat"
+                                alt="Dart" />
+                            <img src="https://img.shields.io/badge/-Flutter-02569B?logo=flutter&logoColor=white&style=flat"
+                                alt="Flutter" />
+                            <img src="https://img.shields.io/badge/-Firebase-FFCA28?logo=firebase&logoColor=white&style=flat"
+                                alt="Firebase" />
+                            <img src="https://img.shields.io/badge/-Google%20Cloud-4285F4?logo=google%20cloud&logoColor=white&style=flat"
+                                alt="Google Cloud" />
                         </div>
                         <!-- <small class="text-body-secondary">9 mins</small> -->
                     </div>
@@ -110,10 +114,12 @@
                             </a>
 
                         </div>
-                        <div class="badge-group">
-                            <div class="badge bg-secondary">Figma</div>
-                            <div class="badge bg-secondary">Miro</div>
-                            <div class="badge bg-secondary">UI/UX</div>
+                        <div class="badge-group text-end">
+
+                            <img src="https://img.shields.io/badge/-Figma-F24E1E?logo=figma&logoColor=white&style=flat"
+                                alt="Figma" />
+                            <img src="https://img.shields.io/badge/-Miro-050038?logo=miro&logoColor=white&style=flat"
+                                alt="Miro" />
                         </div>
 
 
@@ -141,9 +147,12 @@
                             </a>
                         </div>
                         <div class="badge-group">
-                            <div class="badge bg-secondary">Python</div>
-                            <div class="badge bg-secondary">Tkinter</div>
-                            <div class="badge bg-secondary">JavaScript</div>
+                            <img src="https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=flat"
+                                alt="Python" />
+                            <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=white&style=flat"
+                                alt="JavaScript" />
+                            <img src="https://img.shields.io/badge/-Tkinter-FFD700?logo=python&logoColor=white&style=flat"
+                                alt="Tkinter" />
                         </div>
                     </div>
 
@@ -165,9 +174,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="p-4">
-                            <h2 class="display-6 fw-bold d-inline-flex align-items-center flag">Hi, I'm<div
-                                    class="gradient-text mx-2"> Adam </div>
-                                <div class="waving">👋</div>
+                            <h2 class="display-6 fw-bold d-inline-flex align-items-center">Hi, I'm Adam.<div
+                                    class="waving">👋</div>
 
                             </h2>
                             <p class="lead fw-normal">I'm a software developer and designer from Salt Lake City,
@@ -217,18 +225,17 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
-        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
-        async></script>
     <script>
-        $('h3').addClass('text-body-emphasis fs-3');
-        $('.btn').addClass('shadow-sm'); 1
         $(document).ready(function () {
+            $('.btn').addClass('shadow-sm');
+
             if ($("html").attr("data-bs-theme") == "dark") {
-                $("#theme-toggle").addClass("bi-moon-fill");
+                $("#theme-toggle").removeClass("bi-sun-fill radiate").addClass("bi-moon-fill");
             } else {
-                $("#theme-toggle").addClass("bi-sun-fill radiate");
+                $("#theme-toggle").removeClass("bi-moon-fill").addClass("bi-sun-fill radiate");
             }
+            $(".badge-group > img").addClass('border border-tertiary rounded shadow-sm');
+            $('h3').addClass('text-body-emphasis fs-3');
 
             $(".navbar-nav>a, .navbar-brand").click(function () {
                 $(".navbar-collapse").collapse("hide");
@@ -254,6 +261,7 @@
                 $("#about-text").toggleClass("fs-5 p-4");
             }
         });
+
 
     </script>
 </body>
